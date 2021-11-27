@@ -1,0 +1,7 @@
+{
+  "name": "bloodManagement",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
