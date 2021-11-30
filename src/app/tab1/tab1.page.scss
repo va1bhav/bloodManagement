@@ -1,0 +1,13 @@
+.bm-search {
+	input {
+		box-shadow: none !important;
+		border: 1px solid #ddd;
+		border-radius: 22px;
+	}
+}
+ion-searchbar {
+	--box-shadow: none;
+	--border-radius: 23px;
+	--background: #fff;
+	border: 1px solid #ddd;
+}
