@@ -1,17 +1,21 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true" class="scanTab-header">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="scanTab-container">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <img class="scan-page-icon" src="../../assets/scan-page-icon.png" />
+
+  <div class="scan-blood-bag">
+    <img class="blood-bag-icon" src="../../assets/blood-bagAplus.png" />
+    <span class="scan-bag">Scan Blood Bag</span>
+  </div>
+  <div class="scan-qr-text">
+    Scan QR code of blood bag to proceed to next stage
+  </div>
+  <div class="scan-button">Scan</div>
 </ion-content>
