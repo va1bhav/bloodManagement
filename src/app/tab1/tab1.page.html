@@ -4,13 +4,11 @@
     <ion-grid>
       <ion-row>
         <ion-col class="my-auto">
-          <ion-title>
-            Hi John
-          </ion-title>
+          <h2 class="fw-bold">Hi John</h2>
         </ion-col>
         <ion-col class="text-end px-4 my-auto">
           <!-- <ion-icon name="person-circle-outline"></ion-icon> -->
-          <img src="/assets/icon/user-acc.jpg" width="50" height="50" class="rounded-circle">
+          <img [src]="profileIcon" width="50" height="50" class="rounded-circle">
         </ion-col>
 
       </ion-row>
@@ -24,15 +22,89 @@
   <ion-searchbar class="bm-search" placeholder="Search" showCancelButton="focus" debounce="500">
   </ion-searchbar>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+  <div class="px-3 d-flex justify-content-between">
+    <h3 class="m-0 fw-bold">Upcoming Events</h3>
+    <a href="#" class="text-decoration-none">Show all</a>
+  </div>
+  <ion-card class="my-3">
+    <ion-card-content class="p-2">
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="assets/bm-3.png" alt="profile_icon" width="50" height="50">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          <div>
+            Janakalyan Blood Bank Camp
+          </div>
+          <div>
+            <small>15/12/2021</small>
+          </div>
+          <div>
+            <small>Pune, India</small>
+          </div>
+        </div>
+      </div>
     </ion-card-content>
   </ion-card>
+
+
+  <div class="px-3 d-flex justify-content-between">
+    <h3 class="m-0 fw-bold">Dashboard</h3>
+    <a href="#" class="text-decoration-none">Show all</a>
+  </div>
+  <div class="d-flex">
+    <div class="col">
+      <ion-card class="my-3">
+        <ion-card-content class="p-2">
+          <div class="text-center mb-3">
+            <img src="assets/bm-1.png" alt="profile_icon" width="50" height="50">
+          </div>
+          <p> Today Bags Collected</p>
+          <p> <span class="fw-bolder me-4">150/Ltr</span><span>Pune, India</span></p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="col">
+      <ion-card class="my-3">
+        <ion-card-content class="p-2">
+          <div class="text-center mb-3">
+            <img src="assets/bm-2.png" alt="profile_icon" width="50" height="50">
+          </div>
+          <p> Summary of blood</p>
+          <p> <span class="fw-bolder me-4">150/Ltr</span><span>Pune, India</span></p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+
+  <div class="px-3 d-flex justify-content-between">
+    <h3 class="m-0 fw-bold">Registered Donors</h3>
+    <a href="#" class="text-decoration-none">Show all</a>
+  </div>
+
+  <div class="registered-donors-wrapper">
+
+    <ion-card *ngFor="let donor of registeredDonorList" class="my-3">
+      <ion-card-content class="p-2">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+            <img [src]="donor?.profile_icon" alt="profile_icon" width="50" height="50" class="rounded-circle">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                {{donor.user_name}}<br>
+                {{donor.user_location}}
+              </div>
+              <div>
+                <img src="/assets/blood-bagAplus.png" width="45" height="45" alt="profile_icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+
 </ion-content>

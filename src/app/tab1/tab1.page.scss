@@ -11,3 +11,7 @@ ion-searchbar {
 	--background: #fff;
 	border: 1px solid #ddd;
 }
+.registered-donors-wrapper {
+	max-height: 30vh;
+	overflow-y: scroll;
+}
