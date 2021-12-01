@@ -1,0 +1,53 @@
+{
+  "_from": "git+https://github.com/MarianVasile/cordova-plugin-barcodescanner.git",
+  "_id": "com.niou-ns.barcodecamera@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/com.niou-ns.barcodecamera",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/MarianVasile/cordova-plugin-barcodescanner.git",
+    "rawSpec": "https://github.com/MarianVasile/cordova-plugin-barcodescanner.git",
+    "saveSpec": "git+https://github.com/MarianVasile/cordova-plugin-barcodescanner.git",
+    "fetchSpec": "https://github.com/MarianVasile/cordova-plugin-barcodescanner.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/MarianVasile/cordova-plugin-barcodescanner.git#461c2230f3b21d499b0e938e4aabd207efd270fc",
+  "_spec": "https://github.com/MarianVasile/cordova-plugin-barcodescanner.git",
+  "_where": "/Users/vimalkumarvs/Ionic/synergy1",
+  "bugs": {
+    "url": "https://github.com/MarianVasile/cordova-plugin-barcodescanner/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com.niou-ns.barcodecamera",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Barcode Camera Plugin",
+  "devDependencies": {
+    "plist": "*"
+  },
+  "homepage": "https://github.com/MarianVasile/cordova-plugin-barcodescanner#readme",
+  "keywords": [
+    "cordova",
+    "camera",
+    "barcode",
+    "scanner",
+    "cordova-ios"
+  ],
+  "license": "UNLICENSED",
+  "name": "com.niou-ns.barcodecamera",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianVasile/cordova-plugin-barcodescanner.git"
+  },
+  "version": "1.0.0"
+}
