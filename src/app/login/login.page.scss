@@ -10,7 +10,7 @@
     }
     .welcome-text{
         margin-left: 10%;
-        margin-top: 20%;
+        margin-top: 30%;
         text-align: left;
         font-size: 24px;
         color: #00000099;
@@ -22,12 +22,24 @@
         margin-left: 10%;
         margin-top: 10%;
     }
+    .mobile-input-container{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .mobile-input{
+        border-radius: 21px;
+        background: #0000000A 0% 0% no-repeat padding-box;
+        width: 300px;
+        height: 42px;
+        border: none;
+    }
     .continue-button{
         font-weight: bold;
         font-size: 22px;
         text-align: center;
         color: white;
         margin: 10%;
+        margin-top: 70%;
         height: 40px;
         background: #D37171;
         border-radius: 100px;

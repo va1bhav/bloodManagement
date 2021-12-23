@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
+import {Ng2TelInputModule} from 'ng2-tel-input';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    Ng2TelInputModule
   ],
   declarations: [LoginPage]
 })

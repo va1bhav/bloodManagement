@@ -8,7 +8,27 @@
   <div class="app-title">Red Link</div>
   <div class="welcome-text">Welcome!</div>
   <div class="enter-text">Enter your mobile number</div>
-
+  <div class="mobile-input-container">
+    <!-- <ngx-intl-tel-input
+        [cssClass]="'mobile-input'"
+        
+        [enableAutoCountrySelect]="true"
+        [enablePlaceholder]="true"
+        [searchCountryFlag]="true"
+        
+        [selectFirstCountry]="false"
+        [selectedCountryISO]="CountryISO.India"
+        [maxLength]="15"
+        [phoneValidation]="true"
+        [separateDialCode]="separateDialCode"
+        [numberFormat]="PhoneNumberFormat.National"
+        name="phone"
+        formControlName="phone"
+      >
+    </ngx-intl-tel-input> -->
+    <input class="mobile-input" type="text" ng2TelInput />
+  </div>
+  
   <div class="continue-button">Continue</div>
 
 </ion-content>
